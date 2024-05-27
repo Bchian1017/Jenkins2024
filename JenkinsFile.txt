@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Car Brand 1') {
+            steps {
+                echo 'Tesla Model Y'
+                echo 'Tesla Model X'
+            }
+        }
+        stage('Car Brand 2') {
+            steps {
+                echo 'BYD SEAL'
+                echo 'BYD OTTO3'
+            }
+        }
+    }
+}
