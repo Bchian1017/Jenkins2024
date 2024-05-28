@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                dir('C:/Users/sqpckong/Desktop/Jenkins/Jenkins/test.bat') {
+                    /* execute commands in the scripts directory */
+                }
+            bat 'C:/Users/sqpckong/Desktop/Jenkins/Jenkins/test.bat'
+            }
+        }
+        stage('Test') {
+            steps {
+                dir('C:/Users/sqpckong/Desktop/Jenkins/Jenkins/test.bat') {
+                    /* execute commands in the scripts directory */
+                }
+                bat 'C:/Users/sqpckong/Desktop/Jenkins/Jenkins/test.bat'
+            }
+        }
+      stage('Package') {
+            steps {
+                dir('C:/Users/sqpckong/Desktop/Jenkins/Jenkins/test.bat') {
+                    /* execute commands in the scripts directory */
+                }
+                bat 'C:/Users/sqpckong/Desktop/Jenkins/Jenkins/test.bat'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                dir('C:/Users/sqpckong/Desktop/Jenkins/Jenkins/test.bat') {
+                    /* execute commands in the scripts directory */
+                }
+                bat 'C:/Users/sqpckong/Desktop/Jenkins/Jenkins/test.bat'
+            }
+        }
+    }
+}
